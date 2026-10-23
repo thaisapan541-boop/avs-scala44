@@ -1,11 +1,13 @@
-/* DATI ESTRATTO CONTO PER I DUE CONIUGI */
-    let datiCiConiugi = {
-      1: { totCi: '', recordedYears: 1, recordedMonths: 0, stipAttuale: '', missingYears: 0, missingMonths: 0 },
-      2: { totCi: '', recordedYears: 1, recordedMonths: 0, stipAttuale: '', missingYears: 0, missingMonths: 0 }
-    };
+ const AVS_MIN = 1280;
+    const AVS_MAX = 2560;
+    const AVS_COUPLE_MAX = 3840;
+    let modalitaAttuale = 'singolo';
+    let coniugeCiSelezionato = 1;
+
+ 
+    
 
 
-/* SCALA 44 AVS - VALIDA DAL 01.01.2027 */
 const SCALA44 = [
   [15360,1280],[16896,1313],[18432,1347],[19968,1380],
   [21504,1413],[23040,1446],[24576,1480],[26112,1513],
